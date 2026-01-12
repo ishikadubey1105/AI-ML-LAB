@@ -1,49 +1,68 @@
-# AI/ML Lab Experiments
+# 🤖 AI & ML Lab Experiments
 
-This repository contains various Artificial Intelligence and Machine Learning experiments and lab exercises, segregated by topic for easier understanding and execution. The experiments cover fundamental concepts using libraries like Numpy, Pandas, scikit-learn, and more.
+Welcome to the **AI-ML-LAB** repository! This project contains a collection of fundamental Artificial Intelligence and Machine Learning experiments, implemented in Python. It serves as a practical guide to understanding core concepts, algorithms, and data manipulation techniques.
 
-## Repository Structure
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
-The code is organized in the `ai_ml_lab_experiments` directory:
+---
 
-*   **`01_numpy_intro.py`**: Introduction to Numpy arrays, operations, and broadcasting.
-*   **`02_pandas_intro.py`**: Basics of Pandas DataFrames, data loading, and manipulation.
-*   **`03_ecommerce_analysis.py`**: Exploratory data analysis on an Ecommerce Purchases dataset.
-*   **`04_logistic_regression_ads.py`**: Logistic Regression implementation for predicting purchases from Social Network Ads.
-*   **`05_classification_pipeline_final_data.py`**: A comprehensive classification pipeline (Naive Bayes, KNN) with PCA visualization using the "Life Style" dataset.
-*   **`06_knn_iris.py`**: K-Nearest Neighbors (KNN) classification on the Iris dataset.
-*   **`07_naive_bayes_iris.py`**: Naive Bayes classification on the Iris dataset.
-*   **`08_kmeans_iris.py`**: K-Means Clustering on the Iris dataset.
-*   **`09_pca_iris.py`**: Principal Component Analysis (PCA) for dimensionality reduction on the Iris dataset.
+## 📂 Repository Structure
 
-## Prerequisites
+The experiments are organized by topic within the `ai_ml_lab_experiments` directory:
 
-To run these experiments, you will need Python installed along with the following libraries:
+| File | Topic | Description |
+| :--- | :--- | :--- |
+| **`01_numpy_intro.py`** | **Numpy** | Introduction to array creation, broadcasting, and performance benefits over lists. |
+| **`02_pandas_intro.py`** | **Pandas** | Basics of DataFrames, reading CSVs/Excel, and data cleaning techniques. |
+| **`03_ecommerce_analysis.py`** | **EDA** | Exploratory Data Analysis (EDA) on an Ecommerce dataset to answer business questions. |
+| **`04_logistic_regression_ads.py`** | **Regression** | Predicting user purchases from "Social Network Ads" using Logistic Regression. |
+| **`05_classification_pipeline...`** | **Pipeline** | End-to-end pipeline (Preprocessing -> PCA -> Naive Bayes/KNN) on the "Life Style" dataset. |
+| **`06_knn_iris.py`** | **Classification** | K-Nearest Neighbors (KNN) implementation on the classic Iris dataset. |
+| **`07_naive_bayes_iris.py`** | **Classification** | Gaussian Naive Bayes implementation on the Iris dataset. |
+| **`08_kmeans_iris.py`** | **Clustering** | Unsupervised learning using K-Means clustering to group Iris flowers. |
+| **`09_pca_iris.py`** | **Dim. Reduction** | Visualizing high-dimensional data using Principal Component Analysis (PCA). |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have Python installed. You can install the required dependencies using pip:
 
 ```bash
 pip install numpy pandas scikit-learn matplotlib seaborn
 ```
 
-## Datasets
+### Running Experiments
 
-Some scripts require specific datasets to be present in the same directory. You can download them from Kaggle using the links below:
-
-| Script | Dataset Name | Link | Note |
-| :--- | :--- | :--- | :--- |
-| `02_pandas_intro.py` | Pokemon Dataset | [Link](https://www.kaggle.com/datasets/abcsds/pokemon) | Expects `pokemon_data.csv` |
-| `03_ecommerce_analysis.py` | Ecommerce Purchases | [Link](https://www.kaggle.com/datasets/jmmvutu/ecommerce-purchases) | Expects `Ecommerce Purchases.csv` |
-| `04_logistic_regression_ads.py` | Social Network Ads | [Link](https://www.kaggle.com/datasets/rakeshrau/social-network-ads) | Expects `Social_Network_Ads1.csv` |
-| `05_classification_pipeline...` | Life Style Dataset | [Link](https://www.kaggle.com/datasets/aditya08/life-style-dataset) | Expects `Final_data.csv` |
-
-*Note: You may need to rename the downloaded CSV files to match the filenames expected by the scripts, or update the script code to match your filenames.*
-
-## Usage
-
-Navigate to the experiment directory and run the desired script:
+Navigate to the experiment directory and run a script:
 
 ```bash
 cd ai_ml_lab_experiments
-python 01_numpy_intro.py
 python 06_knn_iris.py
-# etc...
 ```
+
+---
+
+## 📊 Datasets
+
+To run these scripts successfully, you will need to download the following datasets from Kaggle and place them in the `ai_ml_lab_experiments` folder.
+
+| Dataset Name | Source | Required File Name | Used In |
+| :--- | :--- | :--- | :--- |
+| **Pokemon Dataset** | [Kaggle Link](https://www.kaggle.com/datasets/abcsds/pokemon) | `pokemon_data.csv` | `02_pandas_intro.py` |
+| **Ecommerce Purchases** | [Kaggle Link](https://www.kaggle.com/datasets/jmmvutu/ecommerce-purchases) | `Ecommerce Purchases.csv` | `03_ecommerce_analysis.py` |
+| **Social Network Ads** | [Kaggle Link](https://www.kaggle.com/datasets/rakeshrau/social-network-ads) | `Social_Network_Ads1.csv` | `04_logistic_regression_ads.py` |
+| **Life Style Dataset** | [Kaggle Link](https://www.kaggle.com/datasets/aditya08/life-style-dataset) | `Final_data.csv` | `05_classification_pipeline...` |
+
+> **Note:** Please rename the downloaded CSV files to match the "Required File Name" column if they differ.
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repository and submit Pull Requests if you'd like to add more experiments or improve existing ones!
